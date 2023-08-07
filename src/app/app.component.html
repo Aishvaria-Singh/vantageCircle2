@@ -1,0 +1,9 @@
+<!-- <div highlightNumber>Steve is 26 years old</div> -->
+<div style="text-align: center;">
+  <h1>Number Highlighter App</h1>
+  <input type="text" [(ngModel)]="inputText" placeholder="Enter text" style="font-size: 18px; padding: 10px;">
+  <button (click)="highlightNumbers()" style="font-size: 18px; padding: 10px;">Highlight Numbers</button>
+</div>
+<div style="text-align: center;">
+  <div highlightNumber [text]="highlightedText"></div>
+</div>

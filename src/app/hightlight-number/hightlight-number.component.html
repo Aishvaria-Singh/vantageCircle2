@@ -1,0 +1,8 @@
+<div>
+    <input type="text" [(ngModel)]="inputText" placeholder="Enter text with numbers">
+    <button (click)="highlightNumbers()">Highlight Numbers</button>
+  </div>
+  <div>
+    <div highlightNumber [textContent]="inputText" *ngIf="highlightedText"></div>
+  </div> 
+  
